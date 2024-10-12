@@ -1,6 +1,7 @@
-'use client';
 import localFont from "next/font/local";
 import "./globals.css";
+import Script from "next/script";
+import Head from "next/head";
 import Nav from "./exclude/nav";
 import Footer from "./exclude/footer";
 
