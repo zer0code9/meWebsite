@@ -102,3 +102,40 @@
     background-color: white;
     color: black;
 }
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 1000px;
+}
+
+/* CARD */
+.cardHolder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 400px;
+    min-width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.15) 0 5px 15px;
+    overflow: hidden;
+    font-size: 20px;
+    transition: 0.15s ease;
+    margin: 5px;
+    padding: 10px;
+}
+.card:hover {
+    transform: scale(1.05) rotate(1.5deg);
+}

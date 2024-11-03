@@ -1,7 +1,5 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Script from "next/script";
-import Head from "next/head";
 import Nav from "./exclude/nav";
 import Footer from "./exclude/footer";
 
@@ -22,13 +20,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Nav />
-        {children}
-        <Footer />
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+                <Nav />
+                { children }
+                <Footer />
+            </body>
+        </html>
+    );
 }
