@@ -1,43 +1,21 @@
 'use client';
 import { useState } from 'react'
-import styles from './native.module.css'
-
-function OptionNav({ options }) {
-    let optionMap = options.map(subtab => 
-        <button className={styles.subtab}>
-            {subtab.name}
-        </button>
-    )
-    return (
-        <subnav className={styles.subnav}>
-            <section>
-                {optionMap}
-            </section>
-        </subnav>
-    );
-}
+import styles from './Native.module.css'
 
 export default function Nav() {
-    const [selected, setSelected] = useState('home');
-    let optionsHome = [
-        { name: "Projects" },
-        { name: "Experiences" },
-        { name: "Skills" }
-    ]
-
     async function handleTabChange(props) {
-        setSelected(props);
+        console.log(props)
     }
 
     return (
         <>
-            <nav className={styles.nav}>
-                <section className={styles.header}>
-                    <button className={styles.tab} onClick={() => handleTabChange('home')}>Home</button>
-                    <button className={styles.tab} onClick={() => handleTabChange('fun')}>Fun</button>
+            <nav className={ styles.nav }>
+                <section className={ styles.header }>
+                    <a className={ styles.tab } onClick={() => handleTabChange('projects')}>projects</a>
+                    <a className={ styles.tab } onClick={() => handleTabChange('experiences')}>experiences</a>
+                    <a className={ styles.tab } onClick={() => handleTabChange('tool')}>tools</a>
                 </section>
             </nav>
-            <OptionNav options={optionsHome} />
         </>
     );
 }

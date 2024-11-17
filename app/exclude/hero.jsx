@@ -1,5 +1,5 @@
 'use client';
-import styles from './native.module.css'
+import styles from './Native.module.css'
 
 export default function Hero() {
     return (

@@ -1,6 +1,6 @@
 /* NAV */
 .nav {
-    background-color: rgb(253, 252, 252);
+    background-color: rgb(15, 15, 15);
     color: red;
     display: flex;
     align-items: center;
@@ -12,12 +12,13 @@
     border-radius: 0 0 200px 200px;
     transition: 0.2s ease;
 }
-
+.nav:hover {
+    transform: scale(1.05);
+}
 .nav > .header {
     font-size: 30px;
     align-items: center;
 }
-
 .nav > .header > .tab {
     margin: 15px;
     cursor: pointer;
@@ -30,7 +31,7 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    border: 3px solid black;
+    border: 3px solid darkred;
     transition: 0.5s ease;
 }
 .tab::before {
@@ -48,36 +49,10 @@
     height: calc(100% + 17px);
 }
 
-.subnav {
-    background-color: rgb(253, 252, 252);
-    color: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    width: 75%;
-    position: relative;
-    z-index: 100;
-    border-radius: 0 0 200px 200px;
-    transition: 0.2s ease;
-}
-
-.subheader {
-    font-size: 30px;
-    align-items: center;
-}
-
-.subtab {
-    cursor: pointer;
-    height: 3rem;
-    width: 9rem;
-    position: relative;
-}
-
 /* FOOTER */
 .footer {
-    background-color: black;
-    color: white;
+    background-color: rgb(15, 15, 15);
+    color: red;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -87,20 +62,17 @@
     transition: 0.5s ease;
     position: relative;
 }
+.footer:hover {
+    transform: scale(1.05);
+}
 .footer > .space {
     margin: 0 100px;
 }
 .goto {
-    color: white;
     border-radius: 100%;
     padding: 10px;
     font-size: 50px;
     cursor: pointer;
-}
-.goto:hover {
-    transition: 1.3s ease;
-    background-color: white;
-    color: black;
 }
 
 /* HERO */
@@ -125,11 +97,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content:space-around;
     max-width: 400px;
-    min-width: 400px;
-    background: white;
+    min-width: 200px;
+    background: whitesmoke;
     border-radius: 10px;
-    box-shadow: rgba(0,0,0,0.15) 0 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 5px 15px;
     overflow: hidden;
     font-size: 20px;
     transition: 0.15s ease;

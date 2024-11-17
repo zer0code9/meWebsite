@@ -1,24 +1,27 @@
 'use client';
-import styles from './native.module.css'
+import styles from './Native.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 export function CardHolder({ children }) {
     return (
-        <cardHolder className={styles.cardHolder}>
+        <cardholder className={ styles.cardHolder }>
             { children }
-        </cardHolder>
+        </cardholder>
     )
 }
 
-export default function Card({ title, subtitle, description, source }) {
+export default function Card({ title, subtitle, description, source, icon }) {
     return (
-        <card className={styles.card}>
-            <section style={{ display: 'flex', flexDirection: 'row'}}>
-                <div style={{ fontSize: '20px', fontWeight: 'bold' }}>{title}</div>
-                <div style={{ fontSize: '15px', color: 'gray' }}>{subtitle}</div>
-                <div style={{ fontSize: '12px', color: 'grey' }}>{description}</div>
+        <card className={ styles.card }>
+            <section style={ { display: 'flex', flexDirection: 'column' } }>
+                <div style={ { fontSize: '20px', fontWeight: 'bold', color: 'red' } }>{ title }</div>
+                <div style={ { fontSize: '15px', color: 'darkred' } }>{ subtitle }</div>
+                <div style={ { fontSize: '12px', color: 'magenta' } }>{ description }</div>
             </section>
-            <section>
-                { (source) ? <img src={source} alt=""/> : null }
+            <section style={ { display: 'flex', flexDirection: 'row', color: 'red' } }>
+                { source ? <img src={ source } alt=""/> : null }
+                { icon ? <FontAwesomeIcon style={ { fontSize: '50px' } } icon={ icon } /> : null }
             </section>
         </card>
     )
