@@ -1,5 +1,6 @@
 'use client'
 import Card, { CardHolder } from "./exclude/card";
+import Hero from "./exclude/hero";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3, faJs,  faJava, faPython, faReact, faNodeJs, faGithub, faGit, faNpm } from '@fortawesome/free-brands-svg-icons';
 
@@ -47,6 +48,7 @@ export default function RootPage() {
 
   return (
     <>
+        <Hero />
         <section id="projects" style={ { padding: '30px'} }>
             <h1 style={ { textAlign: 'center', fontSize: '30px', fontDecoration: 'underline' } }>projects</h1>
             <CardHolder>

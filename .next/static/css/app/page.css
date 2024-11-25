@@ -17,6 +17,7 @@
 }
 .Native_nav__30ASC:hover {
     transform: scale(1.05);
+    box-shadow: red 0 5px 15px;
 }
 .Native_nav__30ASC > .Native_header__erFGw {
     font-size: 30px;
@@ -28,12 +29,20 @@
     height: 3rem;
     width: 9rem;
     position: relative;
+    color: darkred;
+    transition: 0.5s ease;
 }
+
+.Native_nav__30ASC > .Native_header__erFGw > .Native_tab__X7EGu:hover {
+    color: red;
+}
+
 .Native_tab__X7EGu::before, .Native_tab__X7EGu::after {
     content: '';
     position: absolute;
     width: 40px;
     height: 40px;
+    color: darkred;
     border: 3px solid darkred;
     transition: 0.5s ease;
 }
@@ -50,6 +59,7 @@
 .Native_tab__X7EGu:hover::before, .Native_tab__X7EGu:hover::after {
     width: calc(100% + 17px);
     height: calc(100% + 17px);
+    border-color: red;
 }
 
 /* FOOTER */
@@ -67,6 +77,7 @@
 }
 .Native_footer__aM0Do:hover {
     transform: scale(1.05);
+    box-shadow: red 5px 0px 15px;
 }
 .Native_footer__aM0Do > .Native_space__3cO59 {
     margin: 0 100px;
@@ -111,7 +122,10 @@
     transition: 0.15s ease;
     margin: 5px;
     padding: 10px;
+    cursor: default;
 }
 .Native_card__tkdiP:hover {
-    transform: scale(1.05) rotate(1.5deg);
+    transform: scale(1.5) rotate(1.5deg);
+    background: rgb(15, 15, 15);
+    box-shadow: red 0 5px 15px;
 }

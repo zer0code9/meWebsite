@@ -14,6 +14,7 @@
 }
 .nav:hover {
     transform: scale(1.05);
+    box-shadow: red 0 5px 15px;
 }
 .nav > .header {
     font-size: 30px;
@@ -25,12 +26,20 @@
     height: 3rem;
     width: 9rem;
     position: relative;
+    color: darkred;
+    transition: 0.5s ease;
 }
+
+.nav > .header > .tab:hover {
+    color: red;
+}
+
 .tab::before, .tab::after {
     content: '';
     position: absolute;
     width: 40px;
     height: 40px;
+    color: darkred;
     border: 3px solid darkred;
     transition: 0.5s ease;
 }
@@ -47,6 +56,7 @@
 .tab:hover::before, .tab:hover::after {
     width: calc(100% + 17px);
     height: calc(100% + 17px);
+    border-color: red;
 }
 
 /* FOOTER */
@@ -64,6 +74,7 @@
 }
 .footer:hover {
     transform: scale(1.05);
+    box-shadow: red 5px 0px 15px;
 }
 .footer > .space {
     margin: 0 100px;
@@ -108,7 +119,10 @@
     transition: 0.15s ease;
     margin: 5px;
     padding: 10px;
+    cursor: default;
 }
 .card:hover {
-    transform: scale(1.05) rotate(1.5deg);
+    transform: scale(1.5) rotate(1.5deg);
+    background: rgb(15, 15, 15);
+    box-shadow: red 0 5px 15px;
 }
