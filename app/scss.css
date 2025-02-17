@@ -1,0 +1,140 @@
+/* Slash Extension CSS Shortcuts 1.2.5  PUBLIC | MIT 3.0 */
+/* HTML, JavaScript, and React Friendly */
+
+/* Flex */
+.flex {display: flex;}
+/* Grid */
+.grid {display: grid;}
+/* Justify Content */
+.justifyCenter {justify-content: center;}
+.justifyBetween {justify-content: space-between;}.justifyAround {justify-content: space-around;}.justifyEvenly {justify-content: space-evenly;}
+.justifyStart {justify-content: flex-start;}.justifyEnd {justify-content: flex-end;}
+.justifyInitial {justify-content: initial;}.justifyStretch {justify-content: stretch;}
+/* Align Content */
+.aligncCenter {align-content: center;}
+.aligncBetween {align-content: space-between;}.aligncAround {align-content: space-around;}.alignc-evenly {align-content: space-evenly;}
+.aligncStart {align-content: flex-start;}.aligncEnd {align-content: flex-end;}
+.aligncInitial {align-content: initial;}.aligncStretch {align-content: stretch;}
+/* Justify Items */
+.justifyiCenter {justify-items: center;}.justifyiStart {justify-items: flex-start;}.justifyiEnd {justify-items: flex-end;}
+.justifyiStretch {justify-items: stretch;}.justifyiBaseline {justify-items: baseline;}.justifyiInitial {justify-items: initial;}
+/* Align Items */
+.alignCenter {align-items: center;}.alignStart {align-items: flex-start;}.alignEnd {align-items: flex-end;}
+.alignStretch {align-items: stretch;}.alignBaseline {align-items: baseline;}.alignInitial {align-items: initial;}
+/* Justify Self */
+.justifysCenter {justify-self: center;}.justifysStart {justify-self: flex-start;}.justifysEnd {justify-self: flex-end;}
+.justifysStretch {justify-self: stretch;}.justifysAuto {justify-self: auto;}.justifysBaseline {justify-self: baseline;}
+.justifysInitial {justify-self: initial;}
+/* Flex Wrap */
+.flexWrap {flex-wrap: wrap;}
+.flexNowrap {flex-wrap: nowrap;}
+/* Flex Direction */
+.flexRow {flex-direction: row;}
+.flexColumn {flex-direction: column;}
+
+/* Float */
+.floatLeft {float: left;}
+.floatRight {float: right;}
+.floatStart {float: inline-start;}
+.floatEnd {float: inline-end;}
+.floatNone {float: none;}
+
+/* Display */
+.block {display: block;}
+.none {display: none;}
+.inline {display: inline;}
+
+/* Position */
+.relative {position: relative;}
+.absolute {position: absolute;}
+.fixed {position: fixed;}
+.static {position: static;}
+.sticky {position: sticky;}
+.nopos {position: initial;}
+
+/* No */
+.noLink {color: inherit;text-decoration: none;}
+.noList {list-style: none;}
+
+/* List Decoration */
+.listCircle {list-style: circle;}
+.listNumber {list-style: decimal;}
+.listSquare {list-style: square;}
+
+/* Border Style */
+.borderDashed {border-style: dashed}
+.borderDotted {border-style: dotted}
+.borderGroove {border-style: groove}
+.borderSolid {border-style: solid}
+.borderHidden {border-style: hidden}
+.borderNone {border-style: none}
+.borderRadius {border-radius: 10px;}
+
+/* Text Decoration */
+.textDashed {text-decoration: dashed;}
+.textDotted {text-decoration: dotted;}
+.textStriked {text-decoration: line-through;}
+.textOverline {text-decoration: overline;}
+.textUnderline {text-decoration: underline;}
+.textWavy {text-decoration: wavy;}
+.textNone {text-decoration: none;}
+/* Text Align */
+.textLeft {text-align: left;}
+.textRight {text-align: right;}
+.textCenter {text-align: center;}
+/* Text Transform */
+.textCapitalize {text-transform: capitalize}
+.textUpper {text-transform: uppercase}
+.textLower {text-transform: lowercase}
+
+/* Font Size */
+.fontLarge {font-size: large;}
+.fontXLarge {font-size: x-large;}
+.fontXXLarge {font-size: xx-large;}
+.fontSmall {font-size: small;}
+.fontXSmall {font-size: x-small;}
+.fontXXSmall {font-size: xx-small;}
+/* Font Style */
+.fontItalic {font-style: italic}
+.fontNormal {font-style: normal;}
+/* Font Weight */
+.fontBold {font-weight: bold;}
+.fontLight {font-weight: 300;}
+.fontMedium {font-weight: 500;}
+.fontSemiBold {font-weight: 600;}
+.fontExtraBold {font-weight: 800;}
+
+/* Colors */
+.colorRed{color: red;}.colorBlue{color: blue;}.colorYellow{color: yellow;}.colorGreen{color: green;}.colorOrange{color: orange;}.colorViolet{color: violet;}
+.colorOrangered{color: orangered;}.colorYellowgreen{color: yellowgreen;}.colorBlueviolet{color: blueviolet;}
+.colorWhite{color: white;}.colorBlack{color: black;}.colorGray{color: gray;}.colorDgray{color: darkgray;}
+.colorDred{color: darkred;}.colorDblue{color: darkblue;}.colorDyellow{color: darkgoldenrod;}.colorDgreen{color: darkgreen;}.colorDorange{color: darkorange;}.colorDviolet{color: darkviolet;}
+
+/* Background Color */
+.bgRed{background: red;}.bg-blue{background: blue;}.bg-Yellow{background: yellow;}.bgGreen{background: green;}.bgOrange{background: orange;}.bgViolet{background: violet;}
+.bgOrangered{background: orangered;}.bgYellowgreen{background: yellowgreen;}.bgBlueviolet{background: blueviolet;}
+.bgWhite{background: white;}.bgBlack{background: black;}.bgGray{background: gray;}.bg-dgray{background: darkgray;}
+.bgDred{background: darkred;}.bgDblue{background: darkblue;}.bgDyellow{background: darkgoldenrod;}.bgDgreen{background: darkgreen;}.bgDorange{background: darkorange;}.bgDviolet{background: darkviolet;}
+
+/* Cursor */
+.cursorPointer:hover {cursor: pointer;}
+.cursorText:hover {cursor: text;}
+.cursorMove:hover {cursor: move;}
+
+/* Overflow */
+.overflowXAuto {overflow-x: auto;}
+.overflowYAuto {overflow-y: auto;}
+
+/* Z-Index */
+.z0 {z-index: 0;}
+.z10 {z-index: 10;}
+.z20 {z-index: 20;}
+.z30 {z-index: 30;}
+.z40 {z-index: 40;}
+.z50 {z-index: 50;}
+
+/* Width and Height */
+.wFull {width: 100%;}
+.wScreen {width: max-content;}
+.hFull {height: 100%;}
+.hScreen {height: max-content;}

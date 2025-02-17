@@ -1,7 +1,13 @@
-'use client'
-import Card, { CardHolder } from "./exclude/card";
-import Hero from "./exclude/hero";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+'use client';
+
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
+import ToolCard from "@/components/cards/ToolCard";
+import ProjectCard from "@/components/cards/ProjectCard";
+import Hero from "@/components/Hero";
+
+import aliasLogo from "@/img/alias.png"
+import devspaceLogo from "@/img/devspace.png"
 import { faHtml5, faCss3, faJs,  faJava, faPython, faReact, faNodeJs, faGithub, faGit, faNpm } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -9,58 +15,54 @@ export default function RootPage() {
 
   const data = [
     [
-        { "name": "Alias", "description": "A small discord bot" },
-        { "name": "DevSpace", "description": "A VScode extension" },
+        { "name": "Alias", "description": "A small discord bot", "logo": aliasLogo, "source": "https://github.com/zer0code9/alias" },
+        { "name": "Dev Space", "description": "A VScode extension", "logo": devspaceLogo, "source": "https://github.com/zer0code9/devspace" },
     ],
     [
-        { "name": "HTML5", "type": "language", "icon": faHtml5, "skill": "very good" },
-        { "name": "CSS3", "type": "language", "icon": faCss3, "skill": "very good" },
-        { "name": "JavaScript", "type": "language", "icon": faJs, "skill": "very good" }, 
-        { "name": "TypeScript", "type": "language", "icon": faJs, "skill": "very good" },
-        { "name": "React", "type": "language", "icon": faReact, "skill": "good" },
-        { "name": "Python", "type": "language", "icon": faPython, "skill": "good" },
-        { "name": "Java", "type": "language", "icon": faJava, "skill": "very good" },
-        { "name": "C", "type": "language" },
-        { "name": "C++", "type": "language" },
+        { "name": "HTML5", "type": "language", "icon": faHtml5 },
+        { "name": "CSS3", "type": "language", "icon": faCss3 },
+        { "name": "JavaScript", "type": "language", "icon": faJs }, 
+        { "name": "React", "type": "language", "icon": faReact },
         { "name": "Node.js", "type": "work", "icon": faNodeJs },
-        { "name": "Next.js", "type": "work" },
-        { "name": "Angular.js", "type": "work" },
-        { "name": "Discord.js", "type": "api" },
-        { "name": "Firebase", "type": "api" },
-        { "name": "VSCode", "type": "ide" },
-        { "name": "IntelliJ IDEA", "type": "ide" },
-        { "name": "PyCharm", "type": "ide" },
-        { "name": "CLion", "type": "ide" },
-        { "name": "Eclipse", "type": "ide" },
-        { "name": "VSCode", "type": "ide" },
+        { "name": "NPM.js", "type": "other", "icon": faNpm },
+        { "name": "Python", "type": "language", "icon": faPython },
+        { "name": "Java", "type": "language", "icon": faJava },
         { "name": "Github", "type": "other", "icon": faGithub },
         { "name": "Git", "type": "other", "icon": faGit },
-        { "name": "NPM.js", "type": "other", "icon": faNpm },
     ]
   ]
 
-  let cardProjects = data[0].map((project) => {
-        return <Card key={ project.name } title={ project.name } description={ project.description } />
-  })
-  let cardTools = data[1].map((tool) => {
-        return <Card title={ tool.name } description={ tool.type } icon={ tool.icon ?? undefined } />
-  })
+    let cardProjects = data[0].map((project) => {
+        return <ProjectCard key={ project.name } title={ project.name } description={ project.description } logo={ project.logo } source={ project.source } />
+    })
+    let cardTools = data[1].map((tool) => {
+        return <ToolCard key={ tool.name } title={ tool.name } icon={ tool.icon } />
+    })
 
-  return (
-    <>
-        <Hero />
-        <section id="projects" style={ { padding: '30px'} }>
-            <h1 style={ { textAlign: 'center', fontSize: '30px', fontDecoration: 'underline' } }>projects</h1>
-            <CardHolder>
-                { cardProjects }
-            </CardHolder>
-        </section>
-        <section id="tools" style={ { padding: '30px'} }>
-            <h1 style={ { textAlign: 'center', fontSize: '30px', fontDecoration: 'underline' } }>tools</h1>
-            <CardHolder >
-                { cardTools }
-            </CardHolder>
-        </section>
-    </>
-  );
+    return (
+        <main className="relative w-full h-screen">
+            <Nav />
+            <Hero />
+
+            <page className="flex flex-col items-center page">
+                <section id="tools" className="pageSection">
+                    <h2 className="text-center" style={ { fontSize: '30px' } }>tools</h2>
+                    <cardholder className="flex flex-row flex-wrap justify-center" >
+                        { cardTools }
+                    </cardholder>
+                </section>
+                <section id="education" className="pageSection">
+                <h2 className="text-center" style={ { fontSize: '30px' } }>education</h2>
+                </section>
+                <section id="projects" className="pageSection">
+                    <h2 className="text-center" style={ { fontSize: '30px' } }>projects</h2>
+                    <cardholder className="flex flex-row flex-wrap justify-center" >
+                        { cardProjects }
+                    </cardholder>
+                </section>
+            </page>
+
+            <Footer />
+        </main>
+    );
 }

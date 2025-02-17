@@ -1,0 +1,112 @@
+/* NAV */
+.nav {
+    position: sticky;
+    top: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border-color: var(--foreground2);
+    border-width: 1px;
+    border-style: solid;
+    width: min-content;
+    backdrop-filter: blur(10px);
+}
+.nav > .navItem {
+    padding: 5px;
+    margin: 10px;
+}
+.nav > .navItem > .side {
+    transition: 0.3s ease;
+}
+.nav > .navItem:hover > .side {
+    padding: 0 10px;
+}
+
+/* HERO */
+.hero {
+    height: 400px;
+}
+
+
+/* CARDS */
+
+/* tool card*/
+.toolCard {
+    width: 140px;
+    background: transparent;
+    border-radius: 10px;
+    border-color: var(--foreground2);
+    border-width: 1px;
+    border-style: solid;
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px;
+    cursor: default;
+    transition: 0.2s ease;
+}
+.toolCard:hover {
+    border-color: var(--foreground);
+    box-shadow: 2px 2px 2px 2px var(--foreground);
+}
+.toolCard > .title {
+    color: var(--foreground2);
+}
+
+/* project card */
+.projectCard {
+    width: 550px;
+    height: 100px;
+    border-radius: 10px;
+    border-color: var(--foreground2);
+    border-width: 1px;
+    border-style: solid;
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px;
+    transition: 0.2s ease;
+    cursor: default;
+}
+.projectCard:hover {
+    border-color: var(--foreground);
+    padding: 0 25px;
+}
+.projectCard > .pcardSection {
+    transition: 0.2s ease;
+}
+.projectCard:hover > .pcardSection {
+    filter: blur(2px);
+}
+.projectCard > #mores {
+    transition: 0.2s ease;
+}
+.projectCard:hover > #mores {
+    display: flex;
+}
+.projectCard > #mores > .moreLink {
+    border-radius: 10px;
+    border-color: var(--foreground2);
+    border-width: 1px;
+    border-style: solid;
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+    padding: 10px;
+    font-size: 20px;
+    color: var(--foreground2);
+    border-top: 1px solid var(--foreground2);
+}
+.goto {
+    padding: 9px;
+}
+.goto:hover {
+    color: var(--foreground);
+}
+
+/* PAGE */
+.page > .pageSection {
+    padding: 30px;
+}

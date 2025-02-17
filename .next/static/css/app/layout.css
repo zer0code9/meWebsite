@@ -1,164 +1,9 @@
-/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./app/exclude/Native.module.css ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************/
-/* NAV */
-.Native_nav__30ASC {
-    background-color: rgb(15, 15, 15);
-    color: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    width: 100%;
-    position: relative;
-    z-index: 100;
-    border-radius: 0 0 200px 200px;
-    transition: 0.2s ease;
-}
-.Native_nav__30ASC:hover {
-    transform: scale(1.05);
-    box-shadow: red 0 5px 15px;
-}
-.Native_nav__30ASC > .Native_header__erFGw {
-    font-size: 30px;
-    align-items: center;
-}
-.Native_nav__30ASC > .Native_header__erFGw > .Native_tab__X7EGu {
-    margin: 15px;
-    cursor: pointer;
-    height: 3rem;
-    width: 9rem;
-    position: relative;
-    color: darkred;
-    transition: 0.5s ease;
-}
-
-.Native_nav__30ASC > .Native_header__erFGw > .Native_tab__X7EGu:hover {
-    color: red;
-}
-
-.Native_tab__X7EGu::before, .Native_tab__X7EGu::after {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    color: darkred;
-    border: 3px solid darkred;
-    transition: 0.5s ease;
-}
-.Native_tab__X7EGu::before {
-    left: -10px;
-    top: -10px;
-    border-width: 3px 0 0 3px;
-}
-.Native_tab__X7EGu::after {
-    right: -10px;
-    bottom: -10px;
-    border-width: 0 3px 3px 0;
-}
-.Native_tab__X7EGu:hover::before, .Native_tab__X7EGu:hover::after {
-    width: calc(100% + 17px);
-    height: calc(100% + 17px);
-    border-color: red;
-}
-
-/* FOOTER */
-.Native_footer__aM0Do {
-    background-color: rgb(15, 15, 15);
-    color: red;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    font-size: 20px;
-    transition: 0.5s ease;
-    position: relative;
-}
-.Native_footer__aM0Do:hover {
-    transform: scale(1.05);
-    box-shadow: red 5px 0px 15px;
-}
-.Native_footer__aM0Do > .Native_space__3cO59 {
-    margin: 0 100px;
-}
-.Native_goto__WH9p_ {
-    border-radius: 100%;
-    padding: 10px;
-    font-size: 50px;
-    cursor: pointer;
-}
-
-/* HERO */
-.Native_hero__eaR1F {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    height: 1000px;
-}
-
-/* CARD */
-.Native_cardHolder__k91ma {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-}
-.Native_card__tkdiP {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-around;
-    max-width: 400px;
-    min-width: 200px;
-    background: whitesmoke;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0 5px 15px;
-    overflow: hidden;
-    font-size: 20px;
-    transition: 0.15s ease;
-    margin: 5px;
-    padding: 10px;
-    cursor: default;
-}
-.Native_card__tkdiP:hover {
-    transform: scale(1.5) rotate(1.5deg);
-    background: rgb(15, 15, 15);
-    box-shadow: red 0 5px 15px;
-}
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[14].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"app/layout.jsx","import":"","arguments":[{"src":"./fonts/GeistVF.woff","variable":"--font-geist-sans","weight":"100 900"}],"variableName":"geistSans"} ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-@font-face {
-font-family: '__geistSans_1e4310';
-src: url(/_next/static/media/4473ecc91f70f139-s.p.woff) format('woff');
-font-display: swap;
-font-weight: 100 900;
-}@font-face {font-family: '__geistSans_Fallback_1e4310';src: local("Arial");ascent-override: 85.83%;descent-override: 20.52%;line-gap-override: 9.33%;size-adjust: 107.19%
-}.__className_1e4310 {font-family: '__geistSans_1e4310', '__geistSans_Fallback_1e4310'
-}.__variable_1e4310 {--font-geist-sans: '__geistSans_1e4310', '__geistSans_Fallback_1e4310'
-}
-
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[14].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"app/layout.jsx","import":"","arguments":[{"src":"./fonts/GeistMonoVF.woff","variable":"--font-geist-mono","weight":"100 900"}],"variableName":"geistMono"} ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-@font-face {
-font-family: '__geistMono_c3aa02';
-src: url(/_next/static/media/463dafcda517f24f-s.p.woff) format('woff');
-font-display: swap;
-font-weight: 100 900;
-}@font-face {font-family: '__geistMono_Fallback_c3aa02';src: local("Arial");ascent-override: 69.97%;descent-override: 16.73%;line-gap-override: 7.61%;size-adjust: 131.49%
-}.__className_c3aa02 {font-family: '__geistMono_c3aa02', '__geistMono_Fallback_c3aa02'
-}.__variable_c3aa02 {--font-geist-mono: '__geistMono_c3aa02', '__geistMono_Fallback_c3aa02'
-}
-
 /*!*************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/globals.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./app/globals.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************/
-*, ::before, ::after {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -212,7 +57,7 @@ font-weight: 100 900;
   --tw-contain-style:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -264,9 +109,13 @@ font-weight: 100 900;
   --tw-contain-layout:  ;
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
-}/*
+}
+
+/*
 ! tailwindcss v3.4.13 | MIT License | https://tailwindcss.com
-*//*
+*/
+
+/*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
@@ -581,6 +430,7 @@ menu {
 /*
 Reset default styling for dialogs.
 */
+
 dialog {
   padding: 0;
 }
@@ -616,6 +466,7 @@ button,
 /*
 Make sure disabled buttons don't get the pointer cursor.
 */
+
 :disabled {
   cursor: default;
 }
@@ -649,35 +500,386 @@ video {
 }
 
 /* Make elements with the HTML hidden attribute stay hidden by default */
+
 [hidden] {
   display: none;
 }
-.flex {
+.absolute{
+  position: absolute;
+}
+.relative{
+  position: relative;
+}
+.top-0{
+  top: 0px;
+}
+.z-10{
+  z-index: 10;
+}
+.z-20{
+  z-index: 20;
+}
+.flex{
   display: flex;
 }
-.underline {
-  text-decoration-line: underline;
+.hidden{
+  display: none;
 }
-.antialiased {
+.h-16{
+  height: 4rem;
+}
+.h-full{
+  height: 100%;
+}
+.h-screen{
+  height: 100vh;
+}
+.w-full{
+  width: 100%;
+}
+.flex-grow{
+  flex-grow: 1;
+}
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.flex-row{
+  flex-direction: row;
+}
+.flex-col{
+  flex-direction: column;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.items-center{
+  align-items: center;
+}
+.justify-center{
+  justify-content: center;
+}
+.justify-around{
+  justify-content: space-around;
+}
+.text-center{
+  text-align: center;
+}
+.font-bold{
+  font-weight: 700;
+}
+.antialiased{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ffffff;
+  --foreground2: rgb(128, 128, 128);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
+  width: 50%;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"app/layout.jsx","import":"","arguments":[{"src":"./fonts/GeistVF.woff","variable":"--font-geist-sans","weight":"100 900"}],"variableName":"geistSans"} ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+font-family: 'geistSans';
+src: url(/_next/static/media/4473ecc91f70f139-s.p.woff) format('woff');
+font-display: swap;
+font-weight: 100 900;
+}@font-face {font-family: 'geistSans Fallback';src: local("Arial");ascent-override: 85.83%;descent-override: 20.52%;line-gap-override: 9.33%;size-adjust: 107.19%
+}.__className_1e4310 {font-family: 'geistSans', 'geistSans Fallback'
+}.__variable_1e4310 {--font-geist-sans: 'geistSans', 'geistSans Fallback'
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"app/layout.jsx","import":"","arguments":[{"src":"./fonts/GeistMonoVF.woff","variable":"--font-geist-mono","weight":"100 900"}],"variableName":"geistMono"} ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+font-family: 'geistMono';
+src: url(/_next/static/media/463dafcda517f24f-s.p.woff) format('woff');
+font-display: swap;
+font-weight: 100 900;
+}@font-face {font-family: 'geistMono Fallback';src: local("Arial");ascent-override: 69.97%;descent-override: 16.73%;line-gap-override: 7.61%;size-adjust: 131.49%
+}.__className_c3aa02 {font-family: 'geistMono', 'geistMono Fallback'
+}.__variable_c3aa02 {--font-geist-mono: 'geistMono', 'geistMono Fallback'
+}
+
+/*!**********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./app/scss.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************/
+/* Slash Extension CSS Shortcuts 1.2.5  PUBLIC | MIT 3.0 */
+/* HTML, JavaScript, and React Friendly */
+
+/* Flex */
+.flex {display: flex;}
+/* Grid */
+.grid {display: grid;}
+/* Justify Content */
+.justifyCenter {justify-content: center;}
+.justifyBetween {justify-content: space-between;}.justifyAround {justify-content: space-around;}.justifyEvenly {justify-content: space-evenly;}
+.justifyStart {justify-content: flex-start;}.justifyEnd {justify-content: flex-end;}
+.justifyInitial {justify-content: initial;}.justifyStretch {justify-content: stretch;}
+/* Align Content */
+.aligncCenter {align-content: center;}
+.aligncBetween {align-content: space-between;}.aligncAround {align-content: space-around;}.alignc-evenly {align-content: space-evenly;}
+.aligncStart {align-content: flex-start;}.aligncEnd {align-content: flex-end;}
+.aligncInitial {align-content: initial;}.aligncStretch {align-content: stretch;}
+/* Justify Items */
+.justifyiCenter {justify-items: center;}.justifyiStart {justify-items: flex-start;}.justifyiEnd {justify-items: flex-end;}
+.justifyiStretch {justify-items: stretch;}.justifyiBaseline {justify-items: baseline;}.justifyiInitial {justify-items: initial;}
+/* Align Items */
+.alignCenter {align-items: center;}.alignStart {align-items: flex-start;}.alignEnd {align-items: flex-end;}
+.alignStretch {align-items: stretch;}.alignBaseline {align-items: baseline;}.alignInitial {align-items: initial;}
+/* Justify Self */
+.justifysCenter {justify-self: center;}.justifysStart {justify-self: flex-start;}.justifysEnd {justify-self: flex-end;}
+.justifysStretch {justify-self: stretch;}.justifysAuto {justify-self: auto;}.justifysBaseline {justify-self: baseline;}
+.justifysInitial {justify-self: initial;}
+/* Flex Wrap */
+.flexWrap {flex-wrap: wrap;}
+.flexNowrap {flex-wrap: nowrap;}
+/* Flex Direction */
+.flexRow {flex-direction: row;}
+.flexColumn {flex-direction: column;}
+
+/* Float */
+.floatLeft {float: left;}
+.floatRight {float: right;}
+.floatStart {float: inline-start;}
+.floatEnd {float: inline-end;}
+.floatNone {float: none;}
+
+/* Display */
+.block {display: block;}
+.none {display: none;}
+.inline {display: inline;}
+
+/* Position */
+.relative {position: relative;}
+.absolute {position: absolute;}
+.fixed {position: fixed;}
+.static {position: static;}
+.sticky {position: sticky;}
+.nopos {position: initial;}
+
+/* No */
+.noLink {color: inherit;text-decoration: none;}
+.noList {list-style: none;}
+
+/* List Decoration */
+.listCircle {list-style: circle;}
+.listNumber {list-style: decimal;}
+.listSquare {list-style: square;}
+
+/* Border Style */
+.borderDashed {border-style: dashed}
+.borderDotted {border-style: dotted}
+.borderGroove {border-style: groove}
+.borderSolid {border-style: solid}
+.borderHidden {border-style: hidden}
+.borderNone {border-style: none}
+.borderRadius {border-radius: 10px;}
+
+/* Text Decoration */
+.textDashed {text-decoration: dashed;}
+.textDotted {text-decoration: dotted;}
+.textStriked {text-decoration: line-through;}
+.textOverline {text-decoration: overline;}
+.textUnderline {text-decoration: underline;}
+.textWavy {text-decoration: wavy;}
+.textNone {text-decoration: none;}
+/* Text Align */
+.textLeft {text-align: left;}
+.textRight {text-align: right;}
+.textCenter {text-align: center;}
+/* Text Transform */
+.textCapitalize {text-transform: capitalize}
+.textUpper {text-transform: uppercase}
+.textLower {text-transform: lowercase}
+
+/* Font Size */
+.fontLarge {font-size: large;}
+.fontXLarge {font-size: x-large;}
+.fontXXLarge {font-size: xx-large;}
+.fontSmall {font-size: small;}
+.fontXSmall {font-size: x-small;}
+.fontXXSmall {font-size: xx-small;}
+/* Font Style */
+.fontItalic {font-style: italic}
+.fontNormal {font-style: normal;}
+/* Font Weight */
+.fontBold {font-weight: bold;}
+.fontLight {font-weight: 300;}
+.fontMedium {font-weight: 500;}
+.fontSemiBold {font-weight: 600;}
+.fontExtraBold {font-weight: 800;}
+
+/* Colors */
+.colorRed{color: red;}.colorBlue{color: blue;}.colorYellow{color: yellow;}.colorGreen{color: green;}.colorOrange{color: orange;}.colorViolet{color: violet;}
+.colorOrangered{color: orangered;}.colorYellowgreen{color: yellowgreen;}.colorBlueviolet{color: blueviolet;}
+.colorWhite{color: white;}.colorBlack{color: black;}.colorGray{color: gray;}.colorDgray{color: darkgray;}
+.colorDred{color: darkred;}.colorDblue{color: darkblue;}.colorDyellow{color: darkgoldenrod;}.colorDgreen{color: darkgreen;}.colorDorange{color: darkorange;}.colorDviolet{color: darkviolet;}
+
+/* Background Color */
+.bgRed{background: red;}.bg-blue{background: blue;}.bg-Yellow{background: yellow;}.bgGreen{background: green;}.bgOrange{background: orange;}.bgViolet{background: violet;}
+.bgOrangered{background: orangered;}.bgYellowgreen{background: yellowgreen;}.bgBlueviolet{background: blueviolet;}
+.bgWhite{background: white;}.bgBlack{background: black;}.bgGray{background: gray;}.bg-dgray{background: darkgray;}
+.bgDred{background: darkred;}.bgDblue{background: darkblue;}.bgDyellow{background: darkgoldenrod;}.bgDgreen{background: darkgreen;}.bgDorange{background: darkorange;}.bgDviolet{background: darkviolet;}
+
+/* Cursor */
+.cursorPointer:hover {cursor: pointer;}
+.cursorText:hover {cursor: text;}
+.cursorMove:hover {cursor: move;}
+
+/* Overflow */
+.overflowXAuto {overflow-x: auto;}
+.overflowYAuto {overflow-y: auto;}
+
+/* Z-Index */
+.z0 {z-index: 0;}
+.z10 {z-index: 10;}
+.z20 {z-index: 20;}
+.z30 {z-index: 30;}
+.z40 {z-index: 40;}
+.z50 {z-index: 50;}
+
+/* Width and Height */
+.wFull {width: 100%;}
+.wScreen {width: max-content;}
+.hFull {height: 100%;}
+.hScreen {height: max-content;}
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./components/website.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+/* NAV */
+.nav {
+    position: sticky;
+    top: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border-color: var(--foreground2);
+    border-width: 1px;
+    border-style: solid;
+    width: min-content;
+    backdrop-filter: blur(10px);
+}
+.nav > .navItem {
+    padding: 5px;
+    margin: 10px;
+}
+.nav > .navItem > .side {
+    transition: 0.3s ease;
+}
+.nav > .navItem:hover > .side {
+    padding: 0 10px;
+}
+
+/* HERO */
+.hero {
+    height: 400px;
+}
+
+
+/* CARDS */
+
+/* tool card*/
+.toolCard {
+    width: 140px;
+    background: transparent;
+    border-radius: 10px;
+    border-color: var(--foreground2);
+    border-width: 1px;
+    border-style: solid;
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px;
+    cursor: default;
+    transition: 0.2s ease;
+}
+.toolCard:hover {
+    border-color: var(--foreground);
+    box-shadow: 2px 2px 2px 2px var(--foreground);
+}
+.toolCard > .title {
+    color: var(--foreground2);
+}
+
+/* project card */
+.projectCard {
+    width: 550px;
+    height: 100px;
+    border-radius: 10px;
+    border-color: var(--foreground2);
+    border-width: 1px;
+    border-style: solid;
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px;
+    transition: 0.2s ease;
+    cursor: default;
+}
+.projectCard:hover {
+    border-color: var(--foreground);
+    padding: 0 25px;
+}
+.projectCard > .pcardSection {
+    transition: 0.2s ease;
+}
+.projectCard:hover > .pcardSection {
+    filter: blur(2px);
+}
+.projectCard > #mores {
+    transition: 0.2s ease;
+}
+.projectCard:hover > #mores {
+    display: flex;
+}
+.projectCard > #mores > .moreLink {
+    border-radius: 10px;
+    border-color: var(--foreground2);
+    border-width: 1px;
+    border-style: solid;
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+    padding: 10px;
+    font-size: 20px;
+    color: var(--foreground2);
+    border-top: 1px solid var(--foreground2);
+}
+.goto {
+    padding: 9px;
+}
+.goto:hover {
+    color: var(--foreground);
+}
+
+/* PAGE */
+.page > .pageSection {
+    padding: 30px;
+}
