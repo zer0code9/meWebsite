@@ -12,4 +12,10 @@
     <img alt="Lastest Commit" src="https://img.shields.io/github/last-commit/zer0code9/meWebsite?label=commit&logo=github">
 </p></a>
 
-My portfolio website.
+<p align="center">
+    <img src="./img/cozyroom.jpg">
+</p>
+
+This is my portfolio website for all my projects.
+
+Made by zer0code

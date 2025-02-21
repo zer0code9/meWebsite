@@ -54,7 +54,7 @@
 /* project card */
 .projectCard {
     width: 550px;
-    height: 100px;
+    height: 200px;
     border-radius: 10px;
     border-color: var(--foreground2);
     border-width: 1px;
@@ -70,6 +70,7 @@
     padding: 0 25px;
 }
 .projectCard > .pcardSection {
+    padding: 2px;
     transition: 0.2s ease;
 }
 .projectCard:hover > .pcardSection {
