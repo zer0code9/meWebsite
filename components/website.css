@@ -1,26 +1,3 @@
-/* NAV */
-.nav {
-    position: sticky;
-    top: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    border-color: var(--foreground2);
-    border-width: 1px;
-    border-style: solid;
-    width: min-content;
-    backdrop-filter: blur(10px);
-}
-.nav > .navItem {
-    padding: 5px;
-    margin: 10px;
-}
-.nav > .navItem > .side {
-    transition: 0.3s ease;
-}
-.nav > .navItem:hover > .side {
-    padding: 0 10px;
-}
-
 /* HERO */
 .hero {
     height: 400px;
@@ -51,48 +28,6 @@
     color: var(--foreground2);
 }
 
-/* project card */
-.projectCard {
-    width: 550px;
-    height: 200px;
-    border-radius: 10px;
-    border-color: var(--foreground2);
-    border-width: 1px;
-    border-style: solid;
-    font-size: 20px;
-    margin: 5px;
-    padding: 10px;
-    transition: 0.2s ease;
-    cursor: default;
-}
-.projectCard:hover {
-    border-color: var(--foreground);
-    padding: 0 25px;
-}
-.projectCard > .pcardSection {
-    padding: 2px;
-    transition: 0.2s ease;
-}
-.projectCard:hover > .pcardSection {
-    filter: blur(2px);
-}
-.projectCard > #mores {
-    transition: 0.2s ease;
-}
-.projectCard:hover > #mores {
-    display: flex;
-}
-.projectCard > #mores > .moreLink {
-    border-radius: 10px;
-    border-color: var(--foreground2);
-    border-width: 1px;
-    border-style: solid;
-    font-size: 20px;
-    margin: 5px;
-    padding: 10px;
-    cursor: pointer;
-}
-
 /* FOOTER */
 .footer {
     padding: 10px;
@@ -108,6 +43,21 @@
 }
 
 /* PAGE */
-.page > .pageSection {
-    padding: 30px;
+.pageSection {
+    transform: translateY(40px) scale(0.75);
+    animation: fadeIn 0.9s ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.75);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }

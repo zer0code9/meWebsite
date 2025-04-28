@@ -1,33 +1,44 @@
 'use client';
+import * as React from "react";
+import { cn } from "@/lib/utils";
 
-export default function Nav() {
-    async function handleTabChange(props) {
-        console.log(props)
-    }
+const NavContainer = React.forwardRef(({ className, children, ...props }, ref) => (
+    <div
+        ref={ref}
+        className={cn(
+            "flex flex-row items-center justify-center z-50 w-min rounded-[10px] border border-secondary-foreground cursor-pointer backdrop-blur-[10px]",
+            className
+        )}
+        {...props}
+    >
+        { children }
+    </div>
+))
+NavContainer.displayName = "NavContainer";
 
-    return (
-        <nav className="flex flex-row items-center justify-center z-20 nav">
-            <NavItem name="me" />
-            <NavItem name="tools" />
-            <NavItem name="education" />
-            <NavItem name="projects" />
-        </nav>
-    )
-}
-
-function NavItem({ name }) {
-    return (
-        <button className='flex flex-row navItem' onClick={() => scrollToElement(name)}>
-            <div className="side">{" { "}</div>
-            { name }
-            <div className="side">{" } "}</div>
-        </button>
-    )
-}
+const NavItem = React.forwardRef(({ className, children, name, ...props }, ref) => (
+    <button
+        ref={ref}
+        className={cn(
+            "flex flex-row p-[5px] m-[10px] *:hover:px-[10px]",
+            className
+        )}
+        onClick={() => scrollToElement(name)}
+        {...props}
+    >
+        <div className="duration-[300ms] ease-in-out">{" { "}</div>
+        { name }
+        <div className="duration-[300ms] ease-in-out">{" } "}</div>
+    </button>
+))
+NavItem.displayName = "NavItem";
 
 function scrollToElement(id) {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' }); // Optional: Add smooth scrolling
     }
-  }
+}
+
+export { NavContainer, NavItem }
+

@@ -8,27 +8,12 @@
   --background: #000000;
   --foreground: #ffffff;
   --foreground2: rgb(128, 128, 128);
-}
-
-html {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  --primary-foreground: rgb(255, 255, 255);
+  --secondary-foreground: rgb(128, 128, 128);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: 'Roboto Mono', sans-serif;
-  width: 50%;
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
 }
 
 @layer utilities {
