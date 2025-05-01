@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="15%" src="./img/logo.jpg">
+    <img width="15%" src="./img/logo.png">
     <h1 align="center">Me Website</h1>
 </p>
 <a href="https://github.com/zer0code9" style="text-decoration: none"><p align="center">

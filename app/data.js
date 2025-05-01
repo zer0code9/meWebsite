@@ -1,7 +1,9 @@
 import aliasLogo from "@/img/alias.png"
 import devspaceLogo from "@/img/devspace.png"
-import websiteLogo from "@/img/logo.jpg"
+import websiteLogo from "@/img/logo.png"
+import paraboardLogo from "@/img/paraboard.png"
 import { faHtml5, faCss3, faJs,  faJava, faPython, faReact, faNodeJs, faGithub, faGit, faNpm, faMicrosoft } from '@fortawesome/free-brands-svg-icons';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 module.exports = {
     tools: [
@@ -59,6 +61,17 @@ module.exports = {
             tools: ["JavaScript", "Node.JS", "React", "Next.JS"],
             links: [
                 { name: "Github", href: "https://github.com/zer0code9/meWebsite#readme", icon: faGithub },
+            ]
+        },
+        {
+            name: "Para Board",
+            description: "A simple board for drawing",
+            logo: paraboardLogo,
+            source: "https://github.com/zer0code9/paraboard",
+            tools: ["TypeScript", "Node.JS", "React", "Next.JS", "V0.dev"],
+            links: [
+                { name: "Github", href: "https://github.com/zer0code9/paraboard#readme", icon: faGithub },
+                { name: "Website", href: "https://paraboard.vercel.app/", icon: faCode },
             ]
         },
     ]

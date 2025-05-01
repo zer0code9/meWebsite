@@ -72,7 +72,7 @@ export default function RootPage() {
                                 <CardTitle className="text-primary-foreground">{ project.name }</CardTitle>
                                 <CardText className="text-secondary-foreground text-[15px]">{ project.description }</CardText>
                                 <CardText className="text-secondary-foreground text-[13px]">[ { project.tools.map((tool) => tool + " ") }]</CardText>
-                                <div className="absolute right-1 ">
+                                <div className="absolute right-1 flex flex-col justify-end">
                                 { project.links.map((link) => 
                                     <CardButton key={ link.name } className="flex flex-row items-center justify-center m-1" onClick={ () => handleClick(link.href) }>
                                         <CardText>{ link.name }</CardText>
